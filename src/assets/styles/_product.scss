@@ -1,0 +1,20 @@
+.product {
+  display: flex;
+  margin: 1rem 0;
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+  }
+
+  @media #{$breakpoint-not-small} {
+    padding: 0 1rem;
+    margin: 2rem 0;
+  }
+}

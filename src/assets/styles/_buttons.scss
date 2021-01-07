@@ -1,0 +1,27 @@
+.button-primary {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  margin: 0 auto;
+  background: $turquoise;
+  border: none;
+  padding: 0.75rem 2rem;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color .3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+  justify-content: center;
+  align-self: center;
+
+  &:hover {
+    background-color: #99dfdd;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--fullwidth {
+    align-self: auto;
+  }
+}

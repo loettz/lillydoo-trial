@@ -1,0 +1,41 @@
+.trialbox-teaser {
+  background-image: url("../images/trialbox-teaser-mobile.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 32rem;
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: 'Museo 300', sans-serif;
+    padding: 2rem;
+    width: 100%;
+
+    &-text {
+      display: block;
+      font-size: 2rem;
+      margin: 0;
+      font-weight: normal;
+      text-align: center;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  @media #{$breakpoint-not-small} {
+    align-items: center;
+    background-image: url("../images/trialbox-teaser.jpg");
+    min-height: 42rem;
+
+    &__cta {
+      margin-right: 4rem;
+      width: auto;
+
+      &-text {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

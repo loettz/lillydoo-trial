@@ -1,0 +1,64 @@
+.header {
+  background: #fff;
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0.5rem;
+  }
+
+  &__logo {
+    img {
+      width: 150px;
+    }
+  }
+
+  &__hamburger {
+    opacity: 0.7;
+
+    div {
+      width: 20px;
+      height: 2px;
+      background-color: black;
+      border-radius: 4px;
+      margin: 6px 0;
+    }
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  .nav-item {
+    text-transform: uppercase;
+  }
+
+  @media #{$breakpoint-not-small} {
+
+    background: $off-white;
+
+    &__hamburger {
+      display: none;
+    }
+
+    &__logo {
+      flex: 1 1 30%;
+    }
+
+    &__menu {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      flex: 1 1 70%;
+
+      &-gap {
+        padding: 0 1.5rem;
+      }
+    }
+
+    &__shopping-cart {
+      display: none;
+    }
+  }
+}

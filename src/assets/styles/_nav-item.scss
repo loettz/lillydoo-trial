@@ -1,0 +1,16 @@
+.nav-item {
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $turquoise;
+  }
+
+  &--active {
+    color: $turquoise;
+  }
+
+  @media #{$breakpoint-medium} {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,95 @@
+.footer {
+  &__service {
+    background: $turquoise;
+    color: #fff;
+    text-align: center;
+    font-size: 1.125rem;
+
+    &-contact {
+      display: flex;
+      font-size: 1rem;
+      margin: 1.5rem auto 0 auto;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__partner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &-title {
+      margin-bottom: 0.5rem;
+      font-size: 1.125rem;
+    }
+
+    &-logos {
+      img {
+        margin-right: 0.75rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  &__payment {
+    margin-bottom: 1rem;
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.75rem;
+
+    .nav-item {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  &__awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img:not(:last-child) {
+      border-right: 1px solid #ddd;
+      padding-right: 1rem;
+      margin-right: 1rem;
+    }
+  }
+  &__copyright {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  @media #{$breakpoint-not-small} {
+
+    &__service-contact {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+    }
+
+    &__partner {
+      text-align: left;
+      flex-direction: row;
+      justify-content: space-around;
+
+      &-logos {
+        img {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__payment {
+      margin-bottom: 0;
+    }
+  }
+}

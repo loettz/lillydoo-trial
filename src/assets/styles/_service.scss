@@ -1,0 +1,19 @@
+.service {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .material-icons {
+    margin-right: 0.125rem;
+  }
+
+  @media #{$breakpoint-not-small} {
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

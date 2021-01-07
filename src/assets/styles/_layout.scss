@@ -1,0 +1,22 @@
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 2rem 1rem;
+
+  @media #{$breakpoint-not-small} {
+    padding: 3rem 1rem;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media #{$breakpoint-not-small} {
+    flex-direction: row;
+  }
+}

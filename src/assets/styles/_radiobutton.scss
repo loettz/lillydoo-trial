@@ -1,0 +1,92 @@
+label.radiobutton {
+  flex: 0 1 30%;
+  display: flex;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  padding-right: 0.5rem;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .radiobutton__text {
+      background-color: $turquoise;
+      border-color: $turquoise;
+      color: white;
+
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  &:hover {
+    .radiobutton__text {
+      background-color: $turquoise;
+      color: white;
+      border-color: $turquoise;
+    }
+  }
+}
+
+.radiobutton {
+  &__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    color: #7c7c7c;
+    border: 1px solid #7c7c7c;
+    transition: background-color .3s ease, color .3s ease;
+  }
+
+  &__size {
+    font-size: 1.5rem;
+  }
+
+  &__description {
+    font-size: 0.75rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+@media #{$breakpoint-not-small} {
+  label.radiobutton {
+    flex: 1 1 10%;
+
+    &:not(:first-child) {
+      padding-left: 1.15rem;
+    }
+  }
+  .radiobutton {
+    &__size {
+      font-size: 1rem;
+    }
+
+    &__description {
+      white-space: pre-wrap;
+    }
+  }
+}
