@@ -3,7 +3,7 @@
     <input
         type="radio"
         v-model="size"
-        name="myradios"
+        :name="name"
         :value=val
         :checked="size === val">
     <span class="radiobutton__text">
@@ -19,9 +19,8 @@ export default {
   name: "SelectSize",
   props: {
     val: Number,
-    subtext: String,
-    current: String,
-    model: Number
+    name: String,
+    subtext: String
   },
   computed: {
     size: {

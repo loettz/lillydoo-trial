@@ -10,8 +10,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import Header from './components/Header/Header.vue'
-import './assets/styles/all.scss';
+import '@/assets/styles/all.scss';
+import Header from '@/components/Header/Header.vue'
 import TrialPage from "@/components/Templates/TrialPage/TrialPage";
 import Footer from "@/components/Footer/Footer";
 

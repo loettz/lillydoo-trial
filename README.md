@@ -31,6 +31,10 @@ npm run build
 ```
 npm run lint
 ```
+### Runs unit Tests
+```
+npm run test
+```
 
 ### Component Structure
 

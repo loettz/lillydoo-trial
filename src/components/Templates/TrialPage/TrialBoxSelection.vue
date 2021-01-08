@@ -10,11 +10,11 @@
         <Heading2 title="Entdecke unsere Hautfreundlichkeit" />
         <div class="trialbox__selection-label">Wähle deine Größe</div>
         <div class="trialbox__selection">
-          <SelectSize :val=1 subtext="(2-5 KG)" />
-          <SelectSize :val=2 subtext="(4-8 KG)" />
-          <SelectSize :val=3 subtext="(6-10 KG)" />
-          <SelectSize :val=4 subtext="(9-14 KG)" />
-          <SelectSize :val=5 subtext="(11-16 KG)" />
+          <SelectSize name="trialbox" :val=1 subtext="(2-5 KG)" />
+          <SelectSize name="trialbox" :val=2 subtext="(4-8 KG)" />
+          <SelectSize name="trialbox" :val=3 subtext="(6-10 KG)" />
+          <SelectSize name="trialbox" :val=4 subtext="(9-14 KG)" />
+          <SelectSize name="trialbox" :val=5 subtext="(11-16 KG)" />
         </div>
       </div>
     </div>

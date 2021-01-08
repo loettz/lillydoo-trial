@@ -7,7 +7,10 @@
     </div>
     <div class="product__description">
       <div class="product__title">{{ name }}</div>
-      <div class="product__rating"><img src="../../assets/images/starsrating.png" /> (12)</div>
+      <div class="product__rating"><img
+          alt="starsrating"
+          title="starsrating"
+          src="../../assets/images/starsrating.png" /> (12)</div>
       <List>
         <li>0% Parfüme & Lotionen, 100% LILLYDOO Schutz</li>
         <li>Extra weich und super bequem</li>

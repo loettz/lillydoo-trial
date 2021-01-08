@@ -1,9 +1,9 @@
 <template>
-<div class="footer">
+<footer class="footer">
   <FooterService />
   <FooterPartner />
   <FooterMenu />
-</div>
+</footer>
 </template>
 
 <script>

@@ -5,32 +5,28 @@
     <Description />
     <TrialBoxContent :size="size" />
     <Reviews />
-    <Section>
-        <Heading2 title="Überzeug dich selbst" center />
-        <Button text="Jetzt gratis testen"/>
-    </Section>
-    <img alt="Dandelion" title="Dandelion" src="../../../assets/images/16012019-33.jpg" />
+    <FlowerTeaser />
   </div>
 </template>
 
 <script>
 
-import '@/assets/styles/all.scss';
 import TrialBoxSelection from "@/components/Templates/TrialPage/TrialBoxSelection";
 import Description from "@/components/Templates/TrialPage/Description";
 import TrialBoxTeaser from "@/components/Templates/TrialPage/TrialBoxTeaser";
-import Heading2 from "@/components/Utils/Heading2";
-import Section from "@/components/Layout/Section";
-import Button from "@/components/Utils/Button";
 import TrialBoxContent from "@/components/Templates/TrialPage/TrialBoxContent";
 import Reviews from "@/components/Templates/TrialPage/Reviews";
+import FlowerTeaser from "@/components/Templates/TrialPage/FlowerTeaser";
 
 export default {
   name: "TrialPage",
   components: {
+    FlowerTeaser,
     Reviews,
     TrialBoxContent,
-    Button, Section, Heading2, TrialBoxTeaser, Description, TrialBoxSelection},
+    TrialBoxTeaser,
+    Description,
+    TrialBoxSelection},
   computed: {
     size: {
       get() {

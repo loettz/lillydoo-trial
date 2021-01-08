@@ -1,14 +1,21 @@
+// base styles and variables
 @import 'variables';
 @import 'base';
 @import 'layout';
-@import 'nav-item';
+
+// helpers and basic items
+@import 'helpers';
 @import 'header';
-@import 'buttons';
 @import 'footer';
-@import 'trialbox-teaser';
-@import 'trialbox';
+@import 'nav-item';
+@import 'buttons';
 @import 'radiobutton';
 @import 'step';
 @import 'product';
 @import 'review';
 @import 'service';
+
+// styles for specific page templates
+@import 'trialbox-teaser';
+@import 'trialbox';
+@import 'flower-teaser';
